@@ -1,0 +1,95 @@
+@import url(//db.onlinewebfonts.com/c/ab76ac11856c574a34845fafe8854e54?family=WaterBrushROB);
+
+body {
+  background-color: #bdb2ff;
+}
+
+.gallery {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+  grid-template-rows: auto;
+}
+
+figure img {
+  width: 100%;
+   position: relative;
+      width: 400px;
+      height: 350px;
+      margin: 20px 0;
+      background: red;
+      border-radius: 50% / 10%;
+      color: white;
+      text-align: center;
+      text-indent: .1em;
+      box-shadow: 0 0 10px 5px #00fff7;
+}
+
+figure img:hover {
+    -webkit-transform: scale(110%);
+        -ms-transform: scale(110%);
+            transform: scale(110%);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  color: #ff6392;
+  font-family: Comic Sans MS;
+  text-shadow: 11px 0px 11px rgba(182,35,206,0.75);
+}
+
+h1:hover{
+     -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 3s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+figcaption {
+  margin-left: 40px;
+  text-align: center;
+  font-family: Comic Sans MS;
+  color: #ff6392;
+  text-transform: uppercase;
+  background-color: #ffd6a5;
+  margin-top: 10px;
+    -webkit-box-shadow: 1px 5px 10px #110624c0;
+            box-shadow: 1px 5px 10px #110624c0;
+    border-radius: 8% 92% 10% 90% / 84% 9% 91% 16%;
+}
+
+figcaption:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
